@@ -28,7 +28,7 @@ class MemberManagement
         std::vector<Member> memb; 
         bool isMembEmpty() const; 
         bool isDuplicate() const; 
-        int generateMemberId(); 
+        std::string generateMemberId(); 
 };
 
 #endif
