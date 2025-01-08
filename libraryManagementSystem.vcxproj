@@ -139,6 +139,8 @@
     <ClInclude Include="BookManagement.h" />
     <ClInclude Include="Member.h" />
     <ClInclude Include="MemberManagement.h" />
+    <ClInclude Include="SearchMethods.h" />
+    <ClInclude Include="SearchStrategy.h" />
     <ClInclude Include="Transaction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

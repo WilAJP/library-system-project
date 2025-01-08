@@ -1,10 +1,13 @@
 /********************************************************************/
 /* Author:          Wilfred Jimenez                                 */
 /* Creation Date:   December 21, 2024                               */
-/* Last Edited:     December 21, 2024                               */
+/* Last Edited:     January 7, 2025                                 */
 /* Filename:        Member.h                                        */
 /* Purpose:                                                         */
-
+/*      This file defines the Member class. It includes             */
+/*      constructors, getters, and setters for managing             */
+/*      member-related information such as ID, name, email, and     */
+/*      phone number.                                               */
 /********************************************************************/
 #ifndef MEMBER_H
 #define MEMBER_H
