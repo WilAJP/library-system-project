@@ -17,23 +17,26 @@ class Member
         //default constructor
         Member(); 
         //parameterized constructor
-        Member(std::string memberId, std::string name, std::string email, std::string phone); 
+        Member(std::string memberId, std::string firstName, std::string lastName, std::string email, std::string phone);
 
         //getters
         std::string getMemberId() const; 
-        std::string getName() const; 
+        std::string getFirstName() const; 
+        std::string getLastName() const;
         std::string getEmail() const; 
         std::string getPhone() const; 
 
         //setters
         void setMemberId(std::string memId); 
-        void setName(std::string memName); 
+        void setFirstName(std::string memFirstName); 
+        void setLastName(std::string memLastName);
         void setEmail(std::string memEmail); 
         void setPhone(std::string memPhone); 
 
     private:
         std::string memberId; 
-        std::string name; 
+        std::string firstName;
+        std::string lastName; 
         std::string email; 
         std::string phone; 
 };

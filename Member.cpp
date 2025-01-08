@@ -12,12 +12,12 @@
 
 //documentation
 //default constructor 
-Member::Member() : memberId(""), name(""), email(""), phone("") {}; 
+Member::Member() : memberId(""), firstName(""), lastName(""), email(""), phone("") {};
 
 //documentation
 //parametarized constructor
-Member::Member(std::string memId, std::string memName, std::string memEmail, std::string memPhone)
-      : memberId(memId), name(memName), email(memEmail), phone(memEmail) {}; 
+Member::Member(std::string memId, std::string memFirstName, std::string memLastName, std::string memEmail, std::string memPhone)
+      : memberId(memId), firstName(memFirstName), lastName(memLastName), email(memEmail), phone(memEmail) {};
 
 //getters
 
@@ -28,9 +28,15 @@ std::string Member::getMemberId() const
 }
 
 //documenation
-std::string Member::getName() const
+std::string Member::getFirstName() const
 {
-    return name; 
+    return firstName; 
+}
+
+//documenation
+std::string Member::getLastName() const
+{
+    return lastName;
 }
 
 //documenation
@@ -54,9 +60,15 @@ void Member::setMemberId(std::string memId)
 }
 
 //documentation
-void Member::setName(std::string memName)
+void Member::setFirstName(std::string memFirstName)
 {
-    name = memName; 
+    firstName = memFirstName; 
+}
+
+//documentation
+void Member::setLastName(std::string memLastName)
+{
+    lastName = memLastName;
 }
 
 //documentation

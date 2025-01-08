@@ -11,18 +11,23 @@
 #include <iostream>
 #include "Book.h"
 #include "BookManagement.h"
+#include "Member.h"
+#include "MemberManagement.h"
 
 using namespace std;
 
 void displayMenu();
 void manageBooks(BookManagement& bookManager);
-void manageMembers();
+void manageMembers(MemberManagement& memberManger);
+void memberSearchMenu();
 void manageTransactions();
 void reportInfo();
 
 int main()
 {
     BookManagement bookManager; 
+    MemberManagement memberManger; 
+
     bool condition = true;
     while (condition)
     {
@@ -38,7 +43,7 @@ int main()
             break;
 
         case 2:
-            manageMembers();
+            manageMembers(memberManger);
             break;
 
         case 3:
@@ -77,9 +82,9 @@ void displayMenu()
 {
     cout << endl;
     cout << "========= Library Management System =========" << endl;
-    cout << "1. Manage Books" << endl;
-    cout << "2. Manage Members" << endl;
-    cout << "3. Manage Transactions" << endl;
+    cout << "1. Book Management" << endl;
+    cout << "2. Member Management" << endl;
+    cout << "3. Transaction Management" << endl;
     cout << "4. Information Report" << endl;
     cout << "5. Exit" << endl;
     cout << "Enter choice: ";
@@ -145,7 +150,7 @@ void manageBooks(BookManagement& bookManager)
 //  
 //  Return Value:   None
 ////////////////////////////////////////////////////////
-void manageMembers()
+void manageMembers(MemberManagement& memberManager)
 {
     while (true)
     {
@@ -164,11 +169,11 @@ void manageMembers()
         switch (tempChoice)
         {
         case 1:
-
+            memberManager.addMember(); 
             break;
 
         case 2:
-
+            memberManager.deleteMember(); 
             break;
 
         case 3:
@@ -176,7 +181,7 @@ void manageMembers()
             break;
 
         case 4:
-
+            memberManager.displayAllMembers(); 
             break;
 
         case 5:
@@ -190,6 +195,53 @@ void manageMembers()
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
 
+    }
+}
+
+void memberSearchMenu()
+{
+    while (true)
+    {
+        cout << endl;
+        cout << "========= Member Search =========" << endl;
+        cout << "1. By Member ID" << endl;
+        cout << "2. By Name" << endl;
+        cout << "3. By Email" << endl;
+        cout << "4. By Phone Number" << endl;
+        cout << "5. Back" << endl;
+        cout << "Enter choice: ";
+
+        int tempChoice{ 0 };
+        cin >> tempChoice;
+
+        switch (tempChoice)
+        {
+        case 1:
+            
+            break;
+
+        case 2:
+            
+            break;
+
+        case 3:
+
+            break;
+
+        case 4:
+            
+            break;
+
+        case 5:
+            return;
+            break;
+
+        default:
+            cout << "Invalid choice, try again. \n";
+            //prevents infinite loop when inputting a char instead of int.
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
     }
 }
 

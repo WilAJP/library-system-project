@@ -51,16 +51,16 @@ bool BookManagement::isLibraryEmpty() const
 ////////////////////////////////////////////////////////
 void BookManagement::addBook()
 {
-    std::string isbn{ " " }; 
-    std::string title{ " " }; 
-    std::string author{ " " };
-    int total{ 0 }; 
+    std::string isbn{}; 
+    std::string title{}; 
+    std::string author{};
+    int total{0}; 
 
     std::cin.ignore();              
     std::cout << "\nEnter ISBN: "; 
     getline(std::cin, isbn); 
 
-    //Should be seperate helped funciton
+    //Should be seperate helper funciton
     //check for ISBN duplicate edge case. 
     if (!library.empty())
     {
@@ -83,7 +83,7 @@ void BookManagement::addBook()
     std::cout << "Enter Amount to be Added: ";       
     std::cin >> total; 
 
-    library.emplace_back(isbn, title, author, total, total);    //take notes on why emplace and not push_back
+    library.emplace_back(isbn, title, author, total, total);  //emplace back bc 
     std::cout << "Book Added Succesfully" << std::endl; 
 
 }
@@ -98,17 +98,18 @@ void BookManagement::addBook()
 //  
 //  Return Value:   None
 ////////////////////////////////////////////////////////
-void BookManagement::deleteBook()
+//edge case: if user enters isbn that is not in library, should give try again message
+void BookManagement::deleteBook() 
 {
     //check if library is empty
     if (isLibraryEmpty())
     {
         return;
     }
-    std::string isbn{ " " }; 
+    std::string isbn{}; 
 
     std::cin.ignore();        //clear the newline character from last input
-    std::cout << "Enter ISBN: "; 
+    std::cout << "\nEnter ISBN: "; 
     getline(std::cin, isbn); 
 
     //Iterators allows you to access individual objects within a container, allowing you to modify each object. 
@@ -124,7 +125,8 @@ void BookManagement::deleteBook()
             return; 
         }
     }
-
+    std::cout << "No matching book ISBN found, please try again.\n";
+    return; 
 }
 
 ////////////////////////////////////////////////////////
@@ -145,7 +147,7 @@ void BookManagement::searchBook() const  //const because we are only displaying.
         return; 
     }
 
-    std::string isbn{ " " };
+    std::string isbn{};
 
     std::cin.ignore();        //clear the newline character from last input
     std::cout << "Enter ISBN: ";
