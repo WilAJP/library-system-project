@@ -1,7 +1,5 @@
-﻿  BookManagement.cpp
-  Member.cpp
-  MemberManagement.cpp
+﻿  MemberManagement.cpp
 C:\Users\14845\source\repos\libraryManagementSystem\MemberManagement.cpp(68,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  main.cpp
+  Transaction.cpp
   Generating Code...
   libraryManagementSystem.vcxproj -> C:\Users\14845\source\repos\libraryManagementSystem\x64\Debug\libraryManagementSystem.exe

@@ -133,6 +133,7 @@
     <ClCompile Include="Member.cpp" />
     <ClCompile Include="MemberManagement.cpp" />
     <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="TransactionManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="SearchMethods.h" />
     <ClInclude Include="SearchStrategy.h" />
     <ClInclude Include="Transaction.h" />
+    <ClInclude Include="TransactionManagement.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

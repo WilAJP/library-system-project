@@ -28,11 +28,12 @@ class MemberManagement
         void deleteMember(); 
         void searchMember(const std::string& value, const SearchStrategy& strategy) const; 
         void displayAllMembers() const; 
+        bool isMemberValid(const std::string& memberID) const;
 
     private: 
         std::vector<Member> memberList; 
         bool isMembEmpty() const; 
-        bool isDuplicate() const; 
+        //bool isDuplicate() const; 
         std::string generateMemberId(); 
 };
 

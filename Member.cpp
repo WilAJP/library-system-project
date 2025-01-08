@@ -36,7 +36,7 @@ Member::Member() : memberId(""), firstName(""), lastName(""), email(""), phone("
 //  Return Value:   None
 ////////////////////////////////////////////////////////
 Member::Member(std::string memId, std::string memFirstName, std::string memLastName, std::string memEmail, std::string memPhone)
-      : memberId(memId), firstName(memFirstName), lastName(memLastName), email(memEmail), phone(memEmail) {};
+      : memberId(memId), firstName(memFirstName), lastName(memLastName), email(memEmail), phone(memPhone) {};
 
 //getters
 

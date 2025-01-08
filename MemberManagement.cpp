@@ -207,7 +207,23 @@ void MemberManagement::displayAllMembers() const
             << "\nFirst Name: " << member.getFirstName()
             << "\nLast Name: " << member.getLastName()
             << "\nEmail: " << member.getEmail()
-            << "\nPhone Number: " << member.getPhone() << std::endl; 
+            << "\nPhone Number: " << member.getPhone() << "\n"
+            << "-------------------------------------- \n";
     }
 }
+
+//documenation
+bool MemberManagement::isMemberValid(const std::string& memberID) const 
+{
+    for (const auto& member : memberList) 
+    {
+        if (member.getMemberId() == memberID) 
+        {
+            return true;
+        }
+    }
+    std::cout << "Member ID " << memberID << " does not exist.\n";
+    return false;
+}
+
 

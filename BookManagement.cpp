@@ -152,7 +152,8 @@ void BookManagement::searchBook() const  //const because we are only displaying.
     std::cin.ignore();        //clear the newline character from last input
     std::cout << "Enter ISBN: ";
     getline(std::cin, isbn);
- 
+    
+    bool found = false; 
     //using a ranged based loop here because we do not need to modify anything. 
     for (const auto& book : library)
     {
@@ -163,11 +164,14 @@ void BookManagement::searchBook() const  //const because we are only displaying.
                  << "Author: " << book.getAuthor() << "\n"
                  << "Total Copies: " << book.getTotalCopies() << "\n" 
                  << "Available Copies: " << book.getAvailableCopies() << "\n"; 
+            found = true; 
+            break; 
         }
-        else
-        {
-            std::cout << "Book Not Found, try again \n";
-        }
+       
+    }
+    if (!found)
+    {
+        std::cout << "Book Not Found, try again.\n";
     }
     
 }
@@ -200,4 +204,40 @@ void BookManagement::displayAllBooks() const
             << "Available Copies: " << book.getAvailableCopies() << "\n"
             << "-------------------------------------- \n"; 
     }
+}
+
+//documentation
+bool BookManagement::isBookAvailable(const std::string& isbn) const 
+{
+    for (const auto& book : library) 
+    {
+        if (book.getISBN() == isbn) 
+        {
+            if (book.getAvailableCopies() > 0) 
+            {
+                return true;
+            }
+            else 
+            {
+                std::cout << "No available copies for ISBN: " << isbn << "\n";
+                return false;
+            }
+        }
+    }
+    std::cout << "Book with ISBN " << isbn << " not found.\n";
+    return false;
+}
+
+
+void BookManagement::updateBookAvailability(const std::string& isbn, int value) 
+{
+    for (auto& book : library) 
+    {
+        if (book.getISBN() == isbn) 
+        {
+            book.setAvailableCopies(book.getAvailableCopies() + value); //either add 1 or subtract 1 from availble copies. 
+            return;
+        }
+    }
+    std::cout << "Book with ISBN " << isbn << " not found.\n";
 }

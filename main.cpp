@@ -15,20 +15,23 @@
 #include "Member.h"
 #include "MemberManagement.h"
 #include "SearchMethods.h"
+#include "Transaction.h"
+#include "TransactionManagement.h"
 
 using namespace std;
 
 void displayMenu();
 void manageBooks(BookManagement& bookManager);
-void manageMembers(MemberManagement& memberManger);
+void manageMembers(MemberManagement& memberManager);
 void memberSearchMenu(MemberManagement& memberManager);
-void manageTransactions();
+void manageTransactions(BookManagement& bookManager, MemberManagement& memberManager, TransactionManagement& transactionManager);
 void reportInfo();
 
 int main()
 {
     BookManagement bookManager; 
-    MemberManagement memberManger; 
+    MemberManagement memberManager; 
+    TransactionManagement transactionManager; 
 
     bool condition = true;
     while (condition)
@@ -45,15 +48,15 @@ int main()
             break;
 
         case 2:
-            manageMembers(memberManger);
+            manageMembers(memberManager);
             break;
 
         case 3:
-            manageTransactions();
+            manageTransactions(bookManager, memberManager, transactionManager);
             break;
 
         case 4:
-            reportInfo();
+            //reportInfo();
             break;
 
         case 5:
@@ -221,7 +224,7 @@ void memberSearchMenu(MemberManagement& memberManager)
         cout << endl;
         cout << "========= Member Search =========" << endl;
         cout << "1. By Member ID" << endl;
-        cout << "2. By Name" << endl;
+        cout << "2. By Last Name" << endl;
         cout << "3. By Email" << endl;
         cout << "4. By Phone Number" << endl;
         cout << "5. Back" << endl;
@@ -290,48 +293,74 @@ void memberSearchMenu(MemberManagement& memberManager)
 //  
 //  Return Value:   None
 ////////////////////////////////////////////////////////
-void manageTransactions()
-{
-    while (true)
-    {
-        cout << endl;
-        cout << "========= Transactions =========" << endl;
-        cout << "1. Issue Book to Member " << endl;
-        cout << "2. Return Book" << endl;
-        cout << "3. Search Issued Book" << endl;
-        cout << "4. Back" << endl;
-        cout << "Enter choice: ";
+void manageTransactions(BookManagement& bookManager, MemberManagement& memberManager, TransactionManagement& transactionManager) {
+    while (true) {
+        std::cout << "\n========= Transactions =========" << std::endl;
+        std::cout << "1. Issue Book to Member" << std::endl;
+        std::cout << "2. Return Book" << std::endl;
+        std::cout << "3. Search Issued Book by ISBN" << std::endl;
+        std::cout << "4. Search Issued Book by Member" << std::endl;
+        std::cout << "5. Back" << std::endl;
+        std::cout << "Enter choice: ";
 
         int tempChoice{ 0 };
-        cin >> tempChoice;
+        std::cin >> tempChoice;
 
-        switch (tempChoice)
-        {
+        // Clear the input buffer
+        if (std::cin.fail()) {
+            std::cin.clear(); // Clear error flag
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid input. Please enter a valid choice.\n";
+            continue;
+        }
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear newline
+
+        std::string memberID, isbn, date;
+
+        switch (tempChoice) {
         case 1:
-
+            std::cout << "Enter Member ID: ";
+            std::getline(std::cin, memberID);
+            std::cout << "Enter ISBN: ";
+            std::getline(std::cin, isbn);
+            std::cout << "Enter Issued Date (YYYY-MM-DD): ";
+            std::getline(std::cin, date);
+            transactionManager.issueBook(memberID, isbn, date, bookManager, memberManager);
             break;
 
         case 2:
-
+            std::cout << "Enter Member ID: ";
+            std::getline(std::cin, memberID);
+            std::cout << "Enter ISBN: ";
+            std::getline(std::cin, isbn);
+            std::cout << "Enter Return Date (YYYY-MM-DD): ";
+            std::getline(std::cin, date);
+            transactionManager.returnBook(memberID, isbn, date, bookManager);
             break;
 
         case 3:
-
+            std::cout << "Enter ISBN: ";
+            std::getline(std::cin, isbn);
+            transactionManager.searchIssuedBookByISBN(isbn);
             break;
 
         case 4:
-            return;
+            std::cout << "Enter Member ID: ";
+            std::getline(std::cin, memberID);
+            transactionManager.searchIssuedBookByMember(memberID);
             break;
 
-        default:
-            cout << "Invalid choice, try again. \n";
-            //prevents infinite loop when inputting a char instead of int.
-            cin.clear(); 
-            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        }
+        case 5:
+            return; // Exit the menu
 
+        default:
+            std::cout << "Invalid choice, try again.\n";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
     }
 }
+
 
 ////////////////////////////////////////////////////////
 //  Function name:  reportInfo

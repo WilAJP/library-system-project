@@ -29,6 +29,8 @@ class BookManagement
         void deleteBook(); 
         void searchBook() const; 
         void displayAllBooks() const; 
+        bool isBookAvailable(const std::string& isbn) const;
+        void updateBookAvailability(const std::string& isbn, int value);
 
 
     private:
