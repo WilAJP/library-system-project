@@ -50,5 +50,11 @@
     <ClInclude Include="MemberManagement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SearchStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchMethods.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

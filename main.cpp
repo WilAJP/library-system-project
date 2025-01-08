@@ -9,17 +9,19 @@
 /*      information.                                                */
 /********************************************************************/
 #include <iostream>
+#include <limits>
 #include "Book.h"
 #include "BookManagement.h"
 #include "Member.h"
 #include "MemberManagement.h"
+#include "SearchMethods.h"
 
 using namespace std;
 
 void displayMenu();
 void manageBooks(BookManagement& bookManager);
 void manageMembers(MemberManagement& memberManger);
-void memberSearchMenu();
+void memberSearchMenu(MemberManagement& memberManager);
 void manageTransactions();
 void reportInfo();
 
@@ -91,9 +93,11 @@ void displayMenu()
 }
 
 ////////////////////////////////////////////////////////
-//  Function name:  displayMenu
-//  Description:    Displays the Book management menu options
-//  Parameters:     None
+//  Function name:  manageBooks
+//  Description:    Displays the Book Management menu and allows 
+//                  the user to perform actions such as adding, 
+//                  deleting, searching, and displaying books.
+//  Parameters:     bookManager - Reference to the BookManagement object
 //  
 //  Return Value:   None
 ////////////////////////////////////////////////////////
@@ -143,10 +147,13 @@ void manageBooks(BookManagement& bookManager)
 
     }
 }
+
 ////////////////////////////////////////////////////////
-//  Function name:  displayMenu
-//  Description:    Displays the members menu options
-//  Parameters:     None
+//  Function name:  manageMembers
+//  Description:    Displays the Member Management menu and allows 
+//                  the user to perform actions such as adding, 
+//                  deleting, searching, and displaying members.
+//  Parameters:     memberManager - Reference to the MemberManagement object
 //  
 //  Return Value:   None
 ////////////////////////////////////////////////////////
@@ -177,7 +184,7 @@ void manageMembers(MemberManagement& memberManager)
             break;
 
         case 3:
-
+            memberSearchMenu(memberManager);
             break;
 
         case 4:
@@ -198,7 +205,16 @@ void manageMembers(MemberManagement& memberManager)
     }
 }
 
-void memberSearchMenu()
+////////////////////////////////////////////////////////
+//  Function name:  memberSearchMenu
+//  Description:    Displays the Member Search menu and allows the 
+//                  user to search for members using various criteria 
+//                  like ID, name, email, or phone number.
+//  Parameters:     memberManager - Reference to the MemberManagement object
+//  
+//  Return Value:   None
+////////////////////////////////////////////////////////
+void memberSearchMenu(MemberManagement& memberManager)
 {
     while (true)
     {
@@ -214,24 +230,46 @@ void memberSearchMenu()
         int tempChoice{ 0 };
         cin >> tempChoice;
 
+        std::string searchKey; 
+
         switch (tempChoice)
         {
         case 1:
-            
+        {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Enter Member ID: ";
+            getline(std::cin, searchKey);
+            SearchByMemberID strategy;
+            memberManager.searchMember(searchKey, strategy);
             break;
-
+        }
         case 2:
-            
+        {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Enter Name: ";
+            getline(std::cin, searchKey);
+            SearchByName strategy;
+            memberManager.searchMember(searchKey, strategy);
             break;
-
+        }
         case 3:
-
+        {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Enter Email: ";
+            getline(std::cin, searchKey);
+            SearchByEmail strategy;
+            memberManager.searchMember(searchKey, strategy);
             break;
-
+        }
         case 4:
-            
+        {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Enter Phone Number: ";
+            getline(std::cin, searchKey);
+            SearchByPhone strategy;
+            memberManager.searchMember(searchKey, strategy);
             break;
-
+        }
         case 5:
             return;
             break;

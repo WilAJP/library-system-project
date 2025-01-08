@@ -11,32 +11,12 @@
       "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:MemberManagement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\BookManagement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:BookManagement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\SearchStrategy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:SearchStrategy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Member.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:Member.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\MemberManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:MemberManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:Book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\BookManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:BookManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Member.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:Member.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:Book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\SearchMethods.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AE596E1-B443-41C5-885B-FCB2BBF543B4}|libraryManagementSystem.vcxproj|solutionrelative:SearchMethods.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,49 +36,10 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAMcAAAAAAAAAAAAcwNwAAAASAAAA",
+              "ViewState": "AQIAAEoBAAAAAAAAAAAiwF8BAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-07T03:00:38.819Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book.cpp",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Book.cpp",
-              "RelativeDocumentMoniker": "Book.cpp",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Book.cpp",
-              "RelativeToolTip": "Book.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-22T16:29:46.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookManagement.h",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\BookManagement.h",
-              "RelativeDocumentMoniker": "BookManagement.h",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\BookManagement.h",
-              "RelativeToolTip": "BookManagement.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-18T21:17:53.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookManagement.cpp",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\BookManagement.cpp",
-              "RelativeDocumentMoniker": "BookManagement.cpp",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\BookManagement.cpp",
-              "RelativeToolTip": "BookManagement.cpp",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAowKUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-18T21:26:05.803Z",
               "EditorCaption": ""
             },
             {
@@ -109,61 +50,36 @@
               "RelativeDocumentMoniker": "MemberManagement.cpp",
               "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\MemberManagement.cpp",
               "RelativeToolTip": "MemberManagement.cpp",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGsAAAAEAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-07T02:05:09.68Z",
+              "WhenOpened": "2025-01-08T03:00:53.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MemberManagement.h",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\MemberManagement.h",
-              "RelativeDocumentMoniker": "MemberManagement.h",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\MemberManagement.h",
-              "RelativeToolTip": "MemberManagement.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAACAAAA",
+              "DocumentIndex": 2,
+              "Title": "SearchStrategy.h",
+              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\SearchStrategy.h",
+              "RelativeDocumentMoniker": "SearchStrategy.h",
+              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\SearchStrategy.h",
+              "RelativeToolTip": "SearchStrategy.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T23:26:12.817Z",
+              "WhenOpened": "2025-01-08T01:47:42.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Member.h",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Member.h",
-              "RelativeDocumentMoniker": "Member.h",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Member.h",
-              "RelativeToolTip": "Member.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAeAAAA",
+              "Title": "SearchMethods.h",
+              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\SearchMethods.h",
+              "RelativeDocumentMoniker": "SearchMethods.h",
+              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\SearchMethods.h",
+              "RelativeToolTip": "SearchMethods.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-04T21:07:13.212Z",
+              "WhenOpened": "2025-01-08T01:59:25.481Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Member.cpp",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Member.cpp",
-              "RelativeDocumentMoniker": "Member.cpp",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Member.cpp",
-              "RelativeToolTip": "Member.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-04T21:07:19.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Book.h",
-              "DocumentMoniker": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Book.h",
-              "RelativeDocumentMoniker": "Book.h",
-              "ToolTip": "C:\\Users\\14845\\source\\repos\\libraryManagementSystem\\Book.h",
-              "RelativeToolTip": "Book.h",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T03:01:31.892Z"
             }
           ]
         }
